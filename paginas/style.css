@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 400px;
+    background-color: #333;
+    margin-bottom: 6vh;
+}
+
+.links {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.links h2 {
+    color: white;
+}
+
+.links h2 span {
+    color: rgb(236, 119, 217);
+}
+
+.links button{
+    background-color: rgb(236, 119, 217);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+header div button:hover{
+    color:rgb(236, 119, 217);
+    background-color: white;
+    transform: scale(1.07);
+}
+
+.text {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.text h1{
+    font-size: 44px;
+}
+
+section{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section main{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+}
+
+section main img{
+    width: 100%;
+    border-radius: 7px;
+    height: 300px;
+    object-fit: cover;
+}
+section main div{
+    margin-bottom: 2vh;
+}
+
+section main div h3{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+section main div p{
+    margin-left: 10px;
+}
+
+footer{
+    max-width: 1200px;
+    display: flex;
+    margin: 100px auto 20px auto;
+    justify-content: space-between;
+}
+
+footer h4{
+    font-weight: 400;
+}
+
+footer div i {
+    color: #333;
+    font-size: 30px;
+    margin-left: 5px;
+    transition: all 0.5s;
+}
+
+footer div i:hover{
+    color: rgb(236, 119, 217) ;
+}
+
+@media(max-width:600px) {
+    section main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        }
+    header, section, footer{
+        padding: 5px;
+    }
+    footer div i {
+        color: #333;
+        font-size: 20px;
+        margin-left: 5px;
+        transition: all 0.5s;
+    }
+}
+
+@media(min-width:600px) and (max-width:900px){
+    section main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        }
+    header, section, footer{
+        padding: 5px;
+    }
+    footer div i {
+        color: #333;
+        font-size: 30px;
+        margin-left: 5px;
+        transition: all 0.5s;
+    }
+}
